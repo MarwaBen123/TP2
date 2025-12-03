@@ -1,16 +1,12 @@
 public class Test {
     public static void main(String[] args) {
 
-        // cree TileManager
         TileManager tileManager = new TileManager(20, 20);
 
-        // cree donjon
         Dungeon dungeon = new Dungeon(10, 10, tileManager);
 
-        // remplie du donjon avec Things et SolidThings
         dungeon.fillThingArray();
 
-        // tester hitbox
         HitBox h0 = new HitBox(50, 50, 20, 20);
         HitBox h1 = new HitBox(60, 60, 20, 20);
         HitBox h2 = new HitBox(10, 10, 20, 20);
@@ -19,7 +15,6 @@ public class Test {
         System.out.println(h1);
         System.out.println(h2);
 
-        //  test d'intersect
 
         System.out.println("\nTest intersection h0 / h1 : ");
         if (h0.intersect(h1)) {
@@ -34,9 +29,6 @@ public class Test {
         } else {
             System.out.println("Aucune collision.");
         }
-
-
-        //print donjon
 
 
         System.out.println("\nAffichage du donjon avec h0 comme héros :\n");

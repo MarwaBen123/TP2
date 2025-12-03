@@ -2,11 +2,9 @@ import java.awt.Image;
 
 public class DynamicThings extends AnimatedThings{
 
-    // Vitesse sur les axes X et Y
     private int speedX;
     private int speedY;
 
-    // Constructeur TP1 : position + taille
     DynamicThings(int x, int y, int height, int width) {
         super(x, y, height, width);
         // Les vitesses sont mises à leur valeur par défaut
@@ -14,7 +12,6 @@ public class DynamicThings extends AnimatedThings{
         this.speedY = speedY;
     }
 
-    // Nouveau constructeur TP2 : position + image
     DynamicThings(int x, int y, Image image) {
         super(x, y, image);
         // on laisse pour l'instant les vitesses à 0
